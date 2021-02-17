@@ -14,7 +14,8 @@ the app will work fine with any article as long as you provide a valid URL.
 
 
 ## Note :
-In order to run the app you need to have your API Key retrived from Meaning Cloud Website after you create your account or login 
+In order to run the app you need to have your API Key retrived from Meaning Cloud Website : https://www.meaningcloud.com/developer/create-account
+after you create your account or login you will have your own key to use it in .env file
 Feel free to contact me on LinkedIn if you faced any problem : https://www.linkedin.com/in/raghad-saeed/
 
 
