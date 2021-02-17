@@ -1,0 +1,23 @@
+@import 'variables.scss';
+footer {
+}
+#social {
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  padding: 0% 30%;
+  font-size: $basicFontSize * 2;
+  a {
+    text-decoration: none;
+    color: $sub-color;
+    &:visited {
+    text-decoration: none;
+    }
+  }
+  i {
+    &:hover {
+      cursor: pointer;
+      color: $off-color;
+    }
+  }
+}

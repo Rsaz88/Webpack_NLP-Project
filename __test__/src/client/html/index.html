@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600;700&display=swap"
+      rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/c703ad8cc7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Sentiment Analyzer</title>
+  </head>
+  <body>
+    <header>
+      <h2 id="main-title">
+        Evaluate a news article with NLP
+      </h2>
+      <h4 id="sub-title">
+        Enter a URL of an article or a blog to discover its sentiment
+      </h4>
+    </header>
+    <section id="entry-results">
+      <section id="entry">
+        <form id ="form" action="" onsubmit="return Client.handleSubmit(event)">
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="Place a URL here"
+          />
+          <input
+            type="submit"
+            value="Submit"
+            onclick="return Client.handleSubmit(event)"
+          />
+        </form>
+      </section>
+      <section id="results">
+        <h3>Results</h3>
+        <div id="container">
+          <div id="agreement">
+            Agreement: <span id="agreement-results"></span>
+          </div>
+          <div id="subjectivity">
+            Subjectivity: <span id="subjectivity-results"></span>
+          </div>
+          <div id="confidence">
+            Confidence: <span id="confidence-results"></span>
+          </div>
+          <div id="score">Score: <span id="score-results"></span></div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div id="social">
+        <a href="https://www.linkedin.com/in/raghad-saeed/" target="_blank">
+          <i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/Rsaz88" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+        <a href="https://twitter.com/rsaz_88" target="_blank">
+          <i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </footer>
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>

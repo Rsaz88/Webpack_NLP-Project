@@ -1,0 +1,20 @@
+@import 'variables.scss';
+header {
+  text-align: center;
+
+  #main-title {
+    font-family: $title-font;
+    margin-top: $margins;
+    font-size: $basicFontSize * 2.2;
+    color: $main-color;
+    text-shadow: $title-shadow;
+    font-weight: 900;
+  }
+  #sub-title {
+    font-family: $sub-font;
+    margin: $margins;
+    font-size: $basicFontSize * 1.5;
+    color: $sub-color;
+
+  }
+}
